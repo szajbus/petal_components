@@ -1227,6 +1227,12 @@
   .pc-dropdown__menu-items-wrapper-placement--right {
     @apply left-0 origin-top-left;
   }
+  .pc-dropdown__menu-items-wrapper-placement--bottom-left {
+    @apply bottom-0 right-0 origin-bottom-right;
+  }
+  .pc-dropdown__menu-items-wrapper-placement--bottom-right {
+    @apply bottom-0 left-0 origin-bottom-left;
+  }
   .pc-dropdown__menu-item {
     @apply flex items-center self-start justify-start w-full gap-2 px-4 py-2 text-sm text-left text-gray-700 transition duration-150 ease-in-out dark:hover:bg-gray-700 dark:text-gray-300 dark:bg-gray-800 hover:bg-gray-100;
   }

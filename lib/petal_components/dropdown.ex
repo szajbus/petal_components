@@ -29,7 +29,7 @@ defmodule PetalComponents.Dropdown do
     values: ["alpine_js", "live_view_js"],
     doc: "javascript library used for toggling"
 
-  attr :placement, :string, default: "left", values: ["left", "right"]
+  attr :placement, :string, default: "left", values: ["left", "right", "bottom-left", "bottom-right"]
   attr :rest, :global
 
   slot :trigger_element
@@ -203,6 +203,8 @@ defmodule PetalComponents.Dropdown do
 
   defp placement_class("left"), do: "pc-dropdown__menu-items-wrapper-placement--left"
   defp placement_class("right"), do: "pc-dropdown__menu-items-wrapper-placement--right"
+  defp placement_class("bottom-left"), do: "pc-dropdown__menu-items-wrapper-placement--bottom-left"
+  defp placement_class("bottom-right"), do: "pc-dropdown__menu-items-wrapper-placement--bottom-right"
 
   defp get_disabled_classes(true), do: "pc-dropdown__menu-item--disabled"
   defp get_disabled_classes(false), do: ""
